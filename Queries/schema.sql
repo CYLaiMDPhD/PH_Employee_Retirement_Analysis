@@ -1,3 +1,6 @@
+--Saved as schema.sql
+
+
 -- Creating Tables for PH-EmployeesDB
 CREATE TABLE departments(
 	dept_no VARCHAR(4) NOT NULL,
@@ -85,3 +88,23 @@ CREATE TABLE titles(
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no));
+
+	
+
+-- Testing Title tables again
+CREATE TABLE titles2(
+	emp_no INT NOT NULL,
+	title VARCHAR NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL,
+	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
+	PRIMARY KEY (emp_no, title));
+	
+DROP TABLE titles2 CASCADE;
+
+-- Solution in office hours
+-- Create serial primary key for titles table
+ALTER TABLE titles
+	ADD COLUMN ID serial primary key;
+	
+SELECT * from titles;

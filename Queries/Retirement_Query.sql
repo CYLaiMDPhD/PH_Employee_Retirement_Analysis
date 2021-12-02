@@ -1,4 +1,6 @@
 -- Module Exercise 7.3.1
+-- Saved as Retirement_Query.sql
+
 
 -- Simple query of employees born between 1952 and 1955
 SELECT first_name, last_name FROM employees
