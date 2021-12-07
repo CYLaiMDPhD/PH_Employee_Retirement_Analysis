@@ -1,12 +1,12 @@
 # Pewlett-Hackard_Analysis
 
-*Note: This repository was generated to fullfill assignments (Module 7 Exercises and Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp. Challenge files (Employee_Database_Challenge.sql, retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentorship_eligibility.csv) submitted on ???  for grading.*
+*Note: This repository was generated to fullfill assignments (Module 7 Exercises and Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp. Challenge files (Employee_Database_Challenge.sql, retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentorship_eligibility.csv) submitted on 12-6-21 for grading.*
 
 ## Overview
-This report summarizes key information about Pewlett_Hackard employees who are eligible for retirement and provides analyses and recommendations for Pewlett-Hackard executives and HR to regards to preparing for an anticipated wave of retirements.
+This report summarizes key information about Pewlett_Hackard employees who are eligible for retirement and provides analyses and insights for Pewlett-Hackard executives in regards to preparing for an anticipated wave of retirements.
 
 ### Background and Purpose
-We recently helped our client, Pewlett-Hackard, transition their employee files from excel sheets to a PostgreSQL database. Using the database, we performed several queries to help executives analyze how upcoming retirements would impact the company as a whole and individual departments. Of special concern is the loss of institutional knowledge due to retirement of managers and senior employees. Thus our client has expressed a need also identify qualified employees for a mentorship training program. 
+We recently helped our client, Pewlett-Hackard, transition their employee files from excel sheets to a PostgreSQL database. Using the database, we performed several queries to help executives analyze how upcoming retirements would impact the company as a whole and individual departments. Of special concern is the loss of institutional knowledge due to retirement of managers and senior employees. Our client has expressed a need also identify qualified employees for a mentorship training program. This report presents results of queries for employees retiring by title and departments. 
 
 
 ---
@@ -14,7 +14,7 @@ We recently helped our client, Pewlett-Hackard, transition their employee files 
 **Major Results**
 - The employees database lists 90,398 employees born between 1952 and 1955 (potentially eligible for retirement)
 	- Of these, 72,458 are still working at the company and thus eligible for retirement
-- The vast majoring (??%) of retiring staff are either senior engineers or senior staff
+- The vast majority (> 70%) of retiring staff are either senior engineers or senior staff
 - Only 2 managers are eligible for retirement
 - 1549 current employees have been identified as preliminary mentees for the mentorship program
 
@@ -41,7 +41,7 @@ Based on table 2, we see that a vast majority of potential retirees will be leav
 
 
 ### Plan for Employee Mentorship Program
-The current basic plan for Pewlett-Hackard's mentorship program involves pairing retiring employees with mentees in the same department. Retirees will be kept on as working half-time while mentoring. A preliminary list of 1549 potential mentees for this program was identified from the employees database. Current employees born in 1965 were chosen as they would not retire for another 10 years and should be at least mid-level in experience (mentorship_eligibility.csv). 
+The current basic plan for Pewlett-Hackard's mentorship program involves pairing retiring employees with mentees in the same department. Retirees will be kept on as working half-time while mentoring. A preliminary list of 1,549 potential mentees for this program was identified from the employees database. Current employees born in 1965 were chosen as they would not retire for another 10 years and should be at least mid-level in experience (mentorship_eligibility.csv). 
 
 
 ---
@@ -52,19 +52,18 @@ All deparmentments are affected similarly across the board and will lose approxi
 **Table 3: Retiring Employees by Deparment**
 
 ![Percent_Retire.png](/Images/Percent_Retire.png)
-Table 3 above was created by querying for all current employees (dept_emp joined with departments, filtered for current employees) and querying for current retiring employees (dept_emp joined with employees and departments, filtered for current employment and employees born from 1952-1955) separately. The output tables were then imported into pandas for analysis (see Pewlett-Hackard_Analysis_Graps.ipynb).
+
+*Table 3 above was created by querying for all current employees (dept_emp joined with departments, filtered for current employees) and querying for current retiring employees (dept_emp joined with employees and departments, filtered for current employment and employees born from 1952-1955) separately. The output tables were then imported into pandas for analysis (see Pewlett-Hackard_Analysis_Graps.ipynb).*
 
 
-
-The work for a total of 72,458 positions will need to be replaced and/or passed on to new trainees. Over two thirds of these positions are either senior engineers or senior staff (see Figure 1 above). Institutional knowledge and experience from these retiring staff members should be transferred to appropriate current employees. We have identified a preliminary list of 1549 mentees based solely on age (current employees born in 1965). 
+The work for a total of 72,458 positions will need to be replaced and/or passed on to new trainees through the mentorship program. Over two thirds of these positions are either senior engineers or senior staff (see Figure 1 above). We have identified a preliminary list of 1,549 candidate mentees based solely on age (current employees born in 1965). 
 
 Figure 2 below breaks down the preliminary mentees list by job title. The approximate distribution of job titles corresponds well with the distribution of job titles for retiring employees in figure 1 above. However, note that no candidates for mentorship are in management positions.
 
 **Figure 2: Preliminary Mentees by Title**
 ![mentees_titles_pie.png](/Images/mentees_titles_pie.png)
 
-
-More crucially, this preliminary list of 1,549 mentees is far less than the number of employees retiring (72,458). This list will need to be expanded by other criteria and potentially include new hires in order to adequately fill upcoming vacant positions. We recommend that each department evaluate titles of retirement eligible employees within their departments and tailor their selection criteria to match numbers retiring. New managers may be selected from department specific criteria from their current senior staff. To help with this task, tables 4 and 5 below show retiring employees by title and department and the equivalent table for the current mentees list respectively.
+More crucially, this preliminary list of 1,549 mentees is far less than the number of employees retiring (72,458). This list will need to be expanded by other criteria and potentially include new hires in order to adequately fill upcoming vacant positions. We recommend that each department evaluate titles of retirement eligible employees within their departments and tailor their selection criteria to match the numbers retiring. New managers may be selected from department specific criteria from their current senior staff. To help with this task, tables 4 and 5 below show retiring employees by title and department and the equivalent table for the current mentees list respectively.
 
 **Table 4: Retiring Employees by Job Title and Department**
 ![current_unique_titles_bydept.png](/Images/current_unique_titles_bydept.png)
