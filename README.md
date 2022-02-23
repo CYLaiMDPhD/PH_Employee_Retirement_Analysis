@@ -1,9 +1,24 @@
 # Pewlett-Hackard_Analysis
 
-*Note: This repository was generated to fullfill assignments (Module 7 Exercises and Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp. Challenge files (Employee_Database_Challenge.sql, retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentorship_eligibility.csv) submitted on 12-6-21 for grading.*
+*Note: This repository was generated to fulfill assignments (Module 7 Exercises and Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp.
+The analysis, content, and format of this report were based on the grading rubric.*
+
+*Module exercises as demonstrated by queries schema.sql, Retirement_Query.sql, and Join_Tailored_Queries.sql include:*
+- *Set up and use of a local PostgreSQL database*
+- *Understanding and creating ERDs*
+- *Importing and exporting tables in PostgreSQL*
+- *Basic queries with and without conditions*
+- *Use of basic functions such as joins, groupby, order, count*
+
+
+*The report below is based on analyses from Employee_Database_Challenge.sql and output tables retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentorship_eligibility.csv. Code for additional visualizations (not required by grading rubric) are in Pewlett_Hackard_Analysis_Graphs.ipynb.*
 
 ## Overview
-This report summarizes key information about Pewlett_Hackard employees who are eligible for retirement and provides analyses and insights for Pewlett-Hackard executives in regards to preparing for an anticipated wave of retirements.
+This report summarizes key information about employees who are eligible for retirement at a fictional company called Pewlett-Hackard and provides analyses and insights for Pewlett-Hackard executives preparing for an anticipated wave of retirements.
+
+**Data Source:**
+- Multiple csv files containing employee and department information were provide as part of course materials.
+
 
 ### Background and Purpose
 We recently helped our client, Pewlett-Hackard, transition their employee files from excel sheets to a PostgreSQL database. Using the database, we performed several queries to help executives analyze how upcoming retirements would impact the company as a whole and individual departments. Of special concern is the loss of institutional knowledge due to retirement of managers and senior employees. Our client has expressed a need also identify qualified employees for a mentorship training program. This report presents results of queries for employees retiring by title and departments. 
