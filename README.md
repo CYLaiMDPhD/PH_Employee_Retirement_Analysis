@@ -11,7 +11,7 @@ The analysis, content, and format of this report were based on the grading rubri
 - *Use of basic functions such as joins, groupby, order, count*
 
 
-*The report below is based on analyses from Employee_Database_Challenge.sql and output tables retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentorship_eligibility.csv. Code for additional visualizations (not required by grading rubric) are in Pewlett_Hackard_Analysis_Graphs.ipynb.*
+*The report below is based on analyses from Employee_Database_Challenge.sql and output tables retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentorship_eligibility.csv. Code for additional visualizations (not required by the grading rubric) are in Pewlett_Hackard_Analysis_Graphs.ipynb.*
 
 ## Overview
 This report summarizes key information about employees who are eligible for retirement at a fictional company called Pewlett-Hackard and provides analyses and insights for Pewlett-Hackard executives preparing for an anticipated wave of retirements.
