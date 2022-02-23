@@ -32,7 +32,8 @@ We recently helped our client, Pewlett-Hackard, transition their employee files 
 
 ---
 ## Results
-**Major Findings**
+
+### Major Findings
 - The employees database lists 90,398 employees born between 1952 and 1955 (potentially eligible for retirement)
 	- Of these, 72,458 are still working at the company and thus eligible for retirement
 - The vast majority (> 70%) of retiring staff are either senior engineers or senior staff
