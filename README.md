@@ -54,6 +54,7 @@ Table 1 below lists a breakdown of retirement eligible employees by their most r
 Based on table 2, we see that a vast majority of potential retirees will be leaving senior roles (either senior engineer or senior staff). Only 2 managers will be eligible to retire. Figure 1 below shows the percentage of employee titles eligible for retirement.
 
 **Figure 1: Current Employees Eligible for Retirement by Title**
+
 ![current_retire_pie.png](/Images/current_retire_pie.png)
 
 
@@ -66,10 +67,12 @@ The current basic plan for Pewlett-Hackard's mentorship program involves pairing
 ## Summary and Discussion
 Nearly one third of Pewlett-Hackard's current 240,124 employees are approaching retirement age (born between 1952 and 1955).  This obviously presents a significant challenge to the company if all eligible employees opt to retire on schedule. Not only will positions need to be filled, skilled institutional knowledge may be lost as managers and senior employees depart. 
 
-All deparmentments are affected similarly across the board and will lose approximately 30% of their staff (Table 3).
+All departments are affected similarly across the board and will lose approximately 30% of their staff (Table 3).
+
 **Table 3: Retiring Employees by Deparment**
 
 ![Percent_Retire.png](/Images/Percent_Retire.png)
+
 
 *Table 3 above was created by querying for all current employees (dept_emp joined with departments, filtered for current employees) and querying for current retiring employees (dept_emp joined with employees and departments, filtered for current employment and employees born from 1952-1955) separately. The output tables were then imported into pandas for analysis (see Pewlett-Hackard_Analysis_Graps.ipynb).*
 
@@ -78,7 +81,9 @@ The work for a total of 72,458 positions will need to be replaced and/or passed 
 
 Figure 2 below breaks down the preliminary mentees list by job title. The approximate distribution of job titles corresponds well with the distribution of job titles for retiring employees in figure 1 above. However, note that no candidates for mentorship are in management positions.
 
+
 **Figure 2: Preliminary Mentees by Title**
+
 ![mentees_titles_pie.png](/Images/mentees_titles_pie.png)
 
 More crucially, this preliminary list of 1,549 mentees is far less than the number of employees retiring (72,458). This list will need to be expanded by other criteria and potentially include new hires in order to adequately fill upcoming vacant positions. We recommend that each department evaluate titles of retirement eligible employees within their departments and tailor their selection criteria to match the numbers retiring. New managers may be selected from department specific criteria from their current senior staff. To help with this task, tables 4 and 5 below show retiring employees by title and department and the equivalent table for the current mentees list respectively.
