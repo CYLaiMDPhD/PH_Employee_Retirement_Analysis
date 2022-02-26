@@ -1,4 +1,4 @@
-# Pewlett-Hackard_Analysis
+# Analysis of Employee Retirement Trends at Pewlett-Hackard
 
 *Note: This repository was generated to fulfill assignments (Module 7 Exercises and Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp.
 The analysis, content, and format of this report were based on the grading rubric.*
